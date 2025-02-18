@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+          width: 160px;
+         height: 40px;
+         background:#ff7200;
+         border: none;
+         margin-bottom: 10px;
+         margin-left: 20px;
+         font-size: 18px;
+         border-radius: 10px;
+         cursor: pointer;
+         text-decoration: none;
+        }
+        body{
+          background-color:aqua;
+        }
+        
+      </style>
+    </head>
+
+<body>
+    <center>
+        <h3  style="color: blueviolet;"> register </h3>
+        <form >
+              <table>
+                <tr>
+                    <td style="color: blue;">First name</td>
+                   <td>
+                    <input type="text" name="first name" placeholder="please enter your real name ">
+                   </td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Second name</td>
+                    <td>
+                        <input type="text" name="second name" placeholder="please enter your second name">
+                    </td>
+                </tr>
+                <tr>
+                    <tr>
+                         <td style="color: blue;">email</td>
+                         <td>
+                        <input type="text" name="email"  placeholder="enter email here" required>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td style="color: blue;">password</td>
+                        <td>
+                            <input type="text" name="password" placeholder="enter password here "required>
+                        </td>
+                    </tr>
+                      <tr>
+                        <td style="color: blue;">gender</td>
+                        <td>
+                            <input  type="radio" name="gender">Male
+                            <input  type="radio" name="gender">Female
+                            <input  type="radio" name="gender">other
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: blue;">phone</td>
+                        <td>
+                            <select>
+                                <option>+254</option>
+                                <option>+250</option>
+                                <option>+097</option>
+                                <option>+247</option>
+                                <option>+81</option>
+                                <option>+266</option>
+                            </select>
+                            <input type="phone" name="mob_digt" placeholder="78*******" maxlength="9"><br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="submit" name="submit" id="register" class="btn">
+                        </td>
+                      </tr>
+              </table>
+        </form>
+     </center>
+    
+</body>
+</html>
