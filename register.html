@@ -20,52 +20,57 @@
         body{
           background-color:aqua;
         }
-        
+        .title {
+          color: blueviolet;
+        }
+        .label {
+          color: blue;
+        }
       </style>
     </head>
 
 <body>
     <center>
-        <h3  style="color: blueviolet;"> register </h3>
+        <h3 class="title"> register </h3>
         <form >
               <table>
                 <tr>
-                    <td style="color: blue;">First name</td>
+                    <td class="label">First name</td>
                    <td>
                     <input type="text" name="first name" placeholder="please enter your real name ">
                    </td>
                 </tr>
                 <tr>
-                    <td style="color: blue;">Second name</td>
+                    <td class="label">Second name</td>
                     <td>
                         <input type="text" name="second name" placeholder="please enter your second name">
                     </td>
                 </tr>
                 <tr>
                     <tr>
-                         <td style="color: blue;">email</td>
+                         <td class="label">email</td>
                          <td>
                         <input type="text" name="email"  placeholder="enter email here" required>
                          </td>
                     </tr>
                     <tr>
-                        <td style="color: blue;">password</td>
+                        <td class="label">password</td>
                         <td>
                             <input type="text" name="password" placeholder="enter password here "required>
-                        </td>
+                     </td>
                     </tr>
                       <tr>
-                        <td style="color: blue;">gender</td>
+                        <td class="label">gender</td>
                         <td>
-                            <input  type="radio" name="gender">Male
-                            <input  type="radio" name="gender">Female
-                            <input  type="radio" name="gender">other
+                            <input  type="radio" name="gender" title="Male">Male
+                            <input  type="radio" name="gender" title="Female">Female
+                            <input  type="radio" name="gender" title="Other">Other
                         </td>
                       </tr>
                       <tr>
-                        <td style="color: blue;">phone</td>
+                        <td class="label">phone</td>
                         <td>
-                            <select>
+                            <select title="Country Code">
                                 <option>+254</option>
                                 <option>+250</option>
                                 <option>+097</option>
