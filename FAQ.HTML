@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREQUENTLY QUESTION</title>
+    <link  rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+     <style>
+        @import url(kiki.css);
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #4f63e7;
+            }
+            h1 {
+                text-align: center;
+                color: #d8dae8;
+                margin-top: 50px;
+            }
+            p {
+                text-align: center;
+                color: #240101;
+                font-size: 1.2em;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+                text-align: center;
+            }
+            li {
+                margin-top: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fffafa;
+                font-size: 1.1em;
+            }
+            a:hover {
+                color: #cc0000;
+            }
+     </style>
+     
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            
+            <li><a href="help.html">help</a></li> 
+            <li><a href="Login.html">login</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+<div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <button class="faq-question">What is your return policy? <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+            <p>Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.</p>
+        </div>
+    </div><br<br>
+    <div class="faq-item">
+        <button class="faq-question">How do I track my order? <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+            <p>You can track your order using the tracking number provided in your order confirmation email.</p>
+        </div>
+    </div><br><br>
+    <div class="faq-item">
+        <button class="faq-question">Can I cancel my order? <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+            <p>Once an order has been placed, we are unable to cancel it. Please review your order carefully before checking out.</p>
+        </div><br><br>
+    <div class="faq-item">
+        <button class="faq-question">Do you ship internationally? <i class="fa fa-chevron-down"></i></button>
+        <div class="faq-answer">
+            <p>Yes, we ship to most countries worldwide. Shipping costs will apply, and will be added at checkout.</p>
+        </div>
+    </div><br><br>
+</div>
+
+<script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('i');
+
+            answer.classList.toggle('active');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+            if (answer.classList.contains('active')) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</html>
